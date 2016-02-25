@@ -1,21 +1,31 @@
 *{
-	padding: 0;
-	margin: 0;
-	font-family: Roboto, Arial;
+    -webkit-box-sizing:boder-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, Comic;
 }
-.container-fluid{
-	width: 80%;
-	max-width: 980px;
+html,body{
+    height: 100%;
+    padding: 0;
+    margin:0;
+}
+body{
+    position: relative;
 }
 body{
 background: rgba(0,118,186,1);
-background: -moz-linear-gradient(-45deg, rgba(0,118,186,1) 0%, rgba(73,155,234,1) 100%);
+background: -moz-linear-gradient(-45deg, rgba(0,150,186,1) 0%, rgba(73,155,234,1) 100%);
 background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(0,118,186,1)), color-stop(100%, rgba(73,155,234,1)));
 background: -webkit-linear-gradient(-45deg, rgba(0,118,186,1) 0%, rgba(73,155,234,1) 100%);
 background: -o-linear-gradient(-45deg, rgba(0,118,186,1) 0%, rgba(73,155,234,1) 100%);
 background: -ms-linear-gradient(-45deg, rgba(0,118,186,1) 0%, rgba(73,155,234,1) 100%);
 background: linear-gradient(135deg, rgba(0,118,186,1) 0%, rgba(73,155,234,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076ba', endColorstr='#499bea', GradientType=1 );
+}
+.container-fluid{
+    max-width: 980px;
 }
 #logo{
 	max-height: 52px;
@@ -53,6 +63,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076ba', end
 .navbar-default .navbar-nav > .active > a:hover, 
 .navbar-default .navbar-nav > .active > a:focus {
     color: #0071ba;
+    font-weight: bold;
     background-color: #E7E7E7;
 }
 .navbar-default .navbar-nav > .open > a, 
@@ -96,4 +107,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0076ba', end
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
         color: #333;
     }
+}
+
+/*
+#uno,#dos,#tres,#cuatro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    display: block;
+}
+#uno{
+top:0;
+
+}
+
+#dos{
+    top:100%;
+
+}
+
+#tres{
+top:200%;
+
+}
+#cuatro{
+top:300%;
 }
